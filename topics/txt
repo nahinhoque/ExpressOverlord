@@ -1,0 +1,11 @@
+Simple GET Request
+Get Request With URL Query
+Working With Get Request Header
+Middleware (Application Middleware Route Middleware)
+Simple Post Request | Post Request With URL Query
+Post Request With Header Properties
+Post application-json
+Working With Multipart Form Data (index.js)
+File Upload
+Comparison between GET and POST
+When to use GET and when to use POST
