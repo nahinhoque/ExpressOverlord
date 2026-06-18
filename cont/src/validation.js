@@ -30,6 +30,14 @@ app.post("/api/register",
         .withMessage("Password is missing")
         .isLength({ min: 5 })
         .withMessage("password must have at least 5 characters"),
+
+    body("dob")
+        .trim()
+        .notEmpty()
+        .withMessage("dob is missing")
+        .isISO8601()
+        .toDate()
+        .withMessage("Invalid date format"),
     (req, res, next) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
